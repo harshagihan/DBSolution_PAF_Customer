@@ -70,6 +70,9 @@ return output;
 }
 
 //Read Customer
+/**
+ * @return
+ */
 public String readCustomer()
 {
 String output = "";
@@ -114,7 +117,7 @@ output += "<td>" + country + "</td>";
 
 
 // buttons
-output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-secondary'></td>"
+output += "<td><input name='btnUpdate' type='button' value='Update' class='btnUpdate btn btn-info'></td>"
 + "<td><button class='btnRemove btn btn-danger' name='btnRemove' id ='btnRemove' value='"+ customer_id +"' >Remove</button></td></tr>";
 }
 con.close();
